@@ -1,0 +1,15 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-kodoscode-kodos-191231-authRole",
+            "UnauthRoleArn": "arn:aws:iam::858097969640:role/amplify-kodoscode-kodos-191231-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::858097969640:role/amplify-kodoscode-kodos-191231-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-kodoscode-kodos-191231-deployment",
+            "UnauthRoleName": "amplify-kodoscode-kodos-191231-unauthRole",
+            "StackName": "amplify-kodoscode-kodos-191231",
+            "StackId": "arn:aws:cloudformation:us-east-1:858097969640:stack/amplify-kodoscode-kodos-191231/e088c030-7422-11ea-9017-0a5cf73de175",
+            "AmplifyAppId": "dakx6fjm66o1u"
+        }
+    }
+}
