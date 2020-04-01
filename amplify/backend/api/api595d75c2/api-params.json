@@ -1,0 +1,55 @@
+{
+    "paths": [
+        {
+            "name": "/register",
+            "lambdaFunction": "amplifyjsapp53f8e163",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        },
+        {
+            "name": "/users",
+            "lambdaFunction": "amplifyjsapp53f8e163",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api595d75c2",
+    "apiName": "api595d75c2",
+    "functionArns": [
+        {
+            "lambdaFunction": "amplifyjsapp53f8e163"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-amplify-js-app-amplify-195405-authRole",
+        "unAuthRoleName": "amplify-amplify-js-app-amplify-195405-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "amplifyjsapp53f8e163",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

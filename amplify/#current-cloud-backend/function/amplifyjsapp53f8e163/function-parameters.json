@@ -1,0 +1,20 @@
+{
+    "permissions": {
+        "auth": {
+            "amplifyjsapp86c255db": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        },
+        "storage": {
+            "s3e7249447": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}
