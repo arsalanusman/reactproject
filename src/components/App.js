@@ -8,7 +8,13 @@ import RegisterPage from "./views/RegisterPage/RegisterPage.js";
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 
+import { withAuthenticator } from 'aws-amplify-react'
+import { API } from 'aws-amplify'
+
+
 function App() {
+  let apiData = await API.get('api595d75c2','/login')
+  console.log(apiData, 'testing')
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
       <NavBar />
