@@ -13,9 +13,12 @@ import { API } from 'aws-amplify'
 
 
 export class App extends React.Component {
-  render(){
-    let apiData = await API.get('api595d75c2','/login')
+  componentDidMount(){
+    
+   var apiData = API.get('api595d75c2','/login');
     console.log(apiData, 'testing')
+  }
+  render(){
     return (
       <Suspense fallback={(<div>Loading...</div>)}>
         <NavBar />
