@@ -42,7 +42,10 @@ app.use(function(req, res, next) {
 
 app.get('/login', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  const people = [
+    {"name":"arsalan","email":"testing"}
+  ]
+  res.json(people);
 });
 
 app.get('/login/*', function(req, res) {

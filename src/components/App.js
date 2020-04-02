@@ -9,8 +9,12 @@ import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 
 import { withAuthenticator } from 'aws-amplify-react'
-import { API } from 'aws-amplify'
+import Amplify, { API } from 'aws-amplify';
 
+import awsmobile from './../aws-exports';
+
+Amplify.Logger.LOG_LEVEL = 'DEBUG';
+Amplify.configure(awsmobile);
 
 export class App extends React.Component {
   componentDidMount(){
