@@ -56,9 +56,9 @@ app.get('/login/*', function(req, res) {
 app.get('/users', function(req, res) {
   // Add your code here
   const people = [
-    {"name":"arsalan","email":"testing"}
+    {name:"arsalan",email:"testing"}
   ]
-  res.json(people);
+  res.json({people});
 });
 
 /****************************
