@@ -53,6 +53,14 @@ app.get('/login/*', function(req, res) {
   res.json({success: 'get call succeed!', url: req.url});
 });
 
+app.get('/users', function(req, res) {
+  // Add your code here
+  const people = [
+    {"name":"arsalan","email":"testing"}
+  ]
+  res.json(people);
+});
+
 /****************************
 * Example post method *
 ****************************/

@@ -19,7 +19,7 @@ Amplify.configure(awsmobile);
 export class App extends React.Component {
   componentDidMount(){
     
-   var apiData = API.get('api595d75c2','/login');
+   var apiData = API.get('api595d75c2','/users');
     console.log(apiData, 'testing')
   }
   render(){
