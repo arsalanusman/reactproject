@@ -12,22 +12,24 @@ import { withAuthenticator } from 'aws-amplify-react'
 import { API } from 'aws-amplify'
 
 
-function App() {
-  // let apiData = await API.get('api595d75c2','/login')
-  // console.log(apiData, 'testing')
-  return (
-    <Suspense fallback={(<div>Loading...</div>)}>
-      <NavBar />
-      <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
-        <Switch>
-          <Route exact path="/" component={Auth(LandingPage, null)} />
-          <Route exact path="/login" component={Auth(LoginPage, false)} />
-          <Route exact path="/register" component={Auth(RegisterPage, false)} />
-        </Switch>
-      </div>
-      <Footer />
-    </Suspense>
-  );
+export class App extends React.Component {
+  render(){
+    let apiData = await API.get('api595d75c2','/login')
+    console.log(apiData, 'testing')
+    return (
+      <Suspense fallback={(<div>Loading...</div>)}>
+        <NavBar />
+        <div style={{ paddingTop: '69px', minHeight: 'calc(100vh - 80px)' }}>
+          <Switch>
+            <Route exact path="/" component={Auth(LandingPage, null)} />
+            <Route exact path="/login" component={Auth(LoginPage, false)} />
+            <Route exact path="/register" component={Auth(RegisterPage, false)} />
+          </Switch>
+        </div>
+        <Footer />
+      </Suspense>
+    );
+  }
 }
 
 export default App;
