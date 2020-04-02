@@ -17,10 +17,28 @@ Amplify.Logger.LOG_LEVEL = 'DEBUG';
 Amplify.configure(awsmobile);
 
 export class App extends React.Component {
+
+ postData() { 
+    let apiName = 'api595d75c2';
+    let path = '/register';
+    let myInit = { // OPTIONAL
+        body: {
+          email: "sdfg@sdg.com",
+          password: "asdfasdf",
+          name: "asdf",
+          image: "http://gravatar.com/avatar/1585840307?d=identicon"
+        }, // replace this with attributes you need
+        headers: {} // OPTIONAL
+    }
+    return API.post(apiName, path, myInit);
+}
+
+
   componentDidMount(){
     
    var apiData = API.get('api595d75c2','/users');
     console.log(apiData, 'testing')
+    this.postData()
   }
   render(){
     return (
