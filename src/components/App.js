@@ -13,8 +13,8 @@ import { API } from 'aws-amplify'
 
 
 function App() {
-  let apiData = await API.get('api595d75c2','/login')
-  console.log(apiData, 'testing')
+  // let apiData = await API.get('api595d75c2','/login')
+  // console.log(apiData, 'testing')
   return (
     <Suspense fallback={(<div>Loading...</div>)}>
       <NavBar />
