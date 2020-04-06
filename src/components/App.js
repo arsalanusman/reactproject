@@ -28,7 +28,7 @@ export class App extends React.Component {
           name: "asdf",
           image: "http://gravatar.com/avatar/1585840307?d=identicon"
         }, // replace this with attributes you need
-        headers: { Authorization: `Bearer ${(Auth.currentSession()).getIdToken().getJwtToken()}` }
+        // headers: { Authorization: `Bearer ${(Auth.currentSession()).getIdToken().getJwtToken()}` }
     }
     return API.post(apiName, path, myInit);
 }
